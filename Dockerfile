@@ -1,4 +1,4 @@
-FROM runatlantis/atlantis
+FROM ghcr.io/runatlantis/atlantis:dev
 
 RUN apk add aws-cli jq
 
