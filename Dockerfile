@@ -1,4 +1,5 @@
-FROM ghcr.io/runatlantis/atlantis:v0.19.6
+# Release notes: https://github.com/runatlantis/atlantis/releases/tag/v0.22.3
+FROM ghcr.io/runatlantis/atlantis:v0.22.3
 
 RUN apk add aws-cli jq
 
