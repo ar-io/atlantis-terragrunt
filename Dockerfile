@@ -8,8 +8,6 @@ ARG TERRAGRUNT_VERSION=${TERRAGRUNT_VERSION:-v0.56.2}
 # User root user to install additional packages
 USER root
 
-RUN apk add aws-cli jq
-
 RUN wget https://github.com/gruntwork-io/terragrunt/releases/download/${TERRAGRUNT_VERSION}/terragrunt_linux_amd64 && chmod +x terragrunt_linux_amd64 && mv terragrunt_linux_amd64 /usr/bin/terragrunt
 
 # Switch back to atlantis user
