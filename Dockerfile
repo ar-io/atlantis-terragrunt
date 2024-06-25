@@ -1,9 +1,9 @@
-# Release notes: https://github.com/runatlantis/atlantis/releases/tag/v0.27.2
-ARG ATLANTIS_VERSION=${ATLANTIS_VERSION:-0.27.2}
+# Release notes: https://github.com/runatlantis/atlantis/releases/tag/v0.28.3
+ARG ATLANTIS_VERSION=${ATLANTIS_VERSION:-0.28.3}
 
 FROM ghcr.io/runatlantis/atlantis:v${ATLANTIS_VERSION}
 
-ARG TERRAGRUNT_VERSION=${TERRAGRUNT_VERSION:-v0.56.2}
+ARG TERRAGRUNT_VERSION=${TERRAGRUNT_VERSION:-v0.58.2}
 
 # User root user to install additional packages
 USER root
