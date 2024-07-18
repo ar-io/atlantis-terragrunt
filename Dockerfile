@@ -10,6 +10,9 @@ USER root
 
 RUN wget https://github.com/gruntwork-io/terragrunt/releases/download/${TERRAGRUNT_VERSION}/terragrunt_linux_amd64 && chmod +x terragrunt_linux_amd64 && mv terragrunt_linux_amd64 /usr/bin/terragrunt
 
+# include python3 for local-run commands
+RUN apk add --no-cache python3 py3-pip
+
 # Switch back to atlantis user
 USER atlantis
 WORKDIR /home/atlantis
